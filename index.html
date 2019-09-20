@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <main class="todolist">
+        <header class="header-todolist">
+            <h1 class="header-todolist__title">Omar's Todo List</h1>
+            <div class="header-todolist__insert">
+                <input class="header-todolist__input" id='input-text' type="text">
+                <button onclick='addTask()' class="header-todolist__button" id="add-btn">Add Task</button>        
+            </div>
+        </header>
+        <section id='todolist-main'>
+            <div class='body-todolist' id='body-todolist'>
+                <div class="task">
+                    <input onclick='checkTask(this.parentElement)'class="task__check" type="checkbox">
+                    <input class="task__text" type="text" value="Buy some groceries">
+                </div>
+                <div class="task">
+                    <input onclick='checkTask(this.parentElement)' class="task__check" type="checkbox">
+                    <input class="task__text" type="text" value="Do my homework">
+                </div>
+    
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
